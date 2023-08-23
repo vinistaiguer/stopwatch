@@ -1,0 +1,111 @@
+/* Reset simples css */
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Variaveis */
+
+:root {
+    --background-color: #000000;
+    --primary-color: #1F3463;
+}
+
+html{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overview {
+    background-image: url(../img/time.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    min-height: 100vh;
+}
+
+.container {
+    background: 
+        linear-gradient(152.97deg,  rgba(255, 255, 255, 0.2) 0%,
+                                    rgba(255, 255, 255, 0) 100%);
+
+    backdrop-filter: blur(5px);
+
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+
+    
+    border-radius: 16px;
+    transform: rotate(90deg);
+
+    width: 800px;
+    height:auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%)
+}
+
+.container h1, h2, p, span{
+    color: var(--primary-color);
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.9);
+    font-weight: 700;
+}
+
+.container h1{
+    margin-top: 2.5rem;
+    font-size: 4.5rem;
+    padding-bottom: 0.7rem;
+}
+
+.container h2{
+    font-size: 3rem;
+    padding-bottom: 2rem;
+}
+
+.container p, span{
+    margin-bottom: 2.5rem;
+    font-size: 6rem;
+}
+
+.button-container {
+
+    display: flex;
+    gap: 2rem;
+}
+
+button{
+    color: var(--primary-color);
+    width: 150px;
+   
+    font-size:2.2rem;
+    font-weight: 700;
+
+    background-color: transparent;
+
+    border: 1px solid var(--primary-color);
+    border-radius: .6rem;
+
+    padding:0.5rem;
+    margin-bottom: 2.5rem;
+
+    cursor: pointer;
+
+    transition: 0.3s ease-in-out;
+}
+
+button:hover{
+    background-color: var(--primary-color);
+    color:#fff;
+}
